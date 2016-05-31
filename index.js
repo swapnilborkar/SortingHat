@@ -38,7 +38,7 @@ app.post('/webhook/', function (req, res) {
     let sender = event.sender.id
     if (event.message && event.message.text) {
       let text = event.message.text
-      if (text === 'Generic') {
+      if (text === 'Sort') {
           sendGenericMessage(sender)
           continue
       }
@@ -83,7 +83,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "Gryffindor!",
                     "subtitle": "Oh, another Weasley!",
-                    "image_url": "http://66.media.tumblr.com/675069de1700426362c8f4f934d96161/tumblr_inline_n1sirqxtib1r31u6a.gif",
+                    "image_url": "http://i.imgur.com/BiKN0Lc.png?1",
                     "buttons": [{
                         "type": "web_url",
                         "url": "http://pottermore.wikia.com/wiki/Gryffindor",
@@ -96,7 +96,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Slytherin!",
                     "subtitle": "Slytherin will help you on the way to greatness",
-                    "image_url": "https://images.pottermore.com/bxd3o8b291gf/5fWByiKsHmU6ccYQ6oqAWk/941bc4445349e194bfa61eaa578f39e7/Slytherin-PM-Crest.jpg?w=1200",
+                    "image_url": "http://i.imgur.com/O9MDCug.png?1",
                     "buttons": [{
                         "type": "web_url",
                         "url": "http://pottermore.wikia.com/wiki/Slytherin",
@@ -111,7 +111,7 @@ function sendGenericMessage(sender) {
                 {
                     "title": "Ravenclaw!",
                     "subtitle": "Wit beyond measure is man's greatest treasure",
-                    "image_url": "https://lh3.googleusercontent.com/-SEooZ27bQFY/VRhYQq7KqnI/AAAAAAAABI4/dtdiD7J3tqA/w960-h960/Ravenclaw%2B-%2BKerby%2BRosanes-done.png",
+                    "image_url": "http://i.imgur.com/H6ghdKt.png?1",
                     "buttons": [{
                         "type": "web_url",
                         "url": "http://pottermore.wikia.com/wiki/Ravenclaw",
@@ -126,7 +126,7 @@ function sendGenericMessage(sender) {
                 {
                     "title": "Hufflepuff",
                     "subtitle": "Element #1 of an hscroll",
-                    "image_url": "http://img05.deviantart.net/2ebe/i/2014/155/8/4/hufflepuff_crest_by_chromomaniac-d7l0e4k.png",
+                    "image_url": "http://i.imgur.com/dnXs5K0.png?1",
                     "buttons": [{
                         "type": "web_url",
                         "url": "http://pottermore.wikia.com/wiki/Hufflepuff",
